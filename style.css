@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#recarregar {
+    background-color: #1e90ff;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+#fullscreen-btn {
+    background-color: #1e90ff;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #1e90ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+    border-radius: 10px;
+}
+
+.card.flipped {
+    background-color: #ff6347;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+footer {
+        background-color: #1e90ff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    footer p {
+        margin: 0;
+        color: white;
+    }
+
+@media (max-width: 800px) {
+    #game-board {
+        grid-template-columns: repeat(5, 60px);
+        grid-template-rows: repeat(6, 60px);
+    }
+
+    .card {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5em;
+    }
+
+    .cabecalho {
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    #fullscreen-btn {
+      background-color: #1e90ff;
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      color: white;
+    }
+
+    #recarregar {
+      background-color: #1e90ff;
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      color: white;
+    }
+
+    footer {
+        background-color: #1e90ff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    footer p {
+        margin: 0;
+        color: white;
+    }
+}
